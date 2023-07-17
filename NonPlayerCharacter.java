@@ -45,9 +45,10 @@ public class NonPlayerCharacter extends GameCharacter{
 	}
 	
 	public String reportStructure() {
-		super.reportStructure();
 		
-		StringBuilder sb = new StringBuilder("Active: "+getActive()+"\n");
+		
+		StringBuilder sb = new StringBuilder(super.reportStructure());
+		sb.append("Active: "+getActive()+"\n");
 		sb.append("Intelligence: "+getIntType()+"\n");
 		sb.append("==================================\n");
 		
